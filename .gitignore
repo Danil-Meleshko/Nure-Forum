@@ -1,0 +1,70 @@
+
+# Ignore node_modules (React dependencies)
+forum-client/node_modules/
+
+# Ignore build output
+forum-client/.parcel-cache/
+
+# Logs and temporary files
+forum-client/npm-debug.log*
+forum-client/yarn-debug.log*
+forum-client/yarn-error.log*
+forum-client/.eslintcache
+forum-client/.turbo
+
+# Ignore environment files (store API keys, secrets, etc.)
+forum-client/.env
+forum-client/.env.development
+forum-client/.env.production
+forum-client/src/configurations
+
+# Editor and system files
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Ignore ASP.NET Core bin and obj folders
+ForumAPI/bin/
+ForumAPI/obj/
+
+# Ignore compiled site and logs
+ForumAPI/wwwroot/
+ForumAPI/appsettings.json
+ForumAPI/appsettings.*.json
+
+# Ignore database files
+ForumAPI/*.db
+ForumAPI/Data
+ForumAPI/Migrations
+
+# Ignore Docker-related files
+**/docker-compose.override.yml
+**/docker-compose*.log
+
+# Ignore NuGet packages
+ForumAPI/packages/
+ForumAPI/NuGetScratch/
+
+# Ignore Rider/JetBrains IDE files
+ForumAPI/.idea/
+ForumAPI/.vs/
+
+# Ignore user secrets (if using UserSecrets in .NET)
+ForumAPI/.microsoft/usersecrets/
+ForumAPI/.vsconfig
+
+# Ignore local builds
+ForumAPI/bin/Publish/
+ForumAPI/*.Publish.xml
+
+# Ignore deployment artifacts
+ForumAPI/.azure/
+
+# Ignore certigicates
+ForumAPI/Certificates
+forum-client/.cert

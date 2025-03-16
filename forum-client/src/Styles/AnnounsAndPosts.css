@@ -1,0 +1,447 @@
+
+.AnnouncementsAndPostsBody{
+    display: flex;
+    padding: 60px 300px;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    min-height: 563px;
+}
+
+.AnnouncementsAndPosts-Container{
+    display: flex;
+    gap: 40px;
+}
+
+.AnnouncementsAndPosts-UpperBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1320px;
+    gap: 20px;
+}
+
+.AnnouncementsAndPosts-UpperBlock div{
+    border-bottom: 3px solid #00465F;
+    width: 60%;
+    padding-top: 15px;
+}
+
+.AnnouncementsAndPosts-H1{
+    text-align: center;
+
+    font-family: "Segoe UI", sans-serif;
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 43.2px */
+}
+
+
+/*AnnounsAndPosts*/
+
+.AnnounsAndPosts{
+    display: flex;
+    flex-direction: column;
+    width: 860px;
+    height: 100%;
+    gap: 40px;
+}
+
+.AnnounBody{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: stretch;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background: #F9F9F9;
+}
+
+.PagesButtonsWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.NextAndBackPage-Button{
+    display: flex;
+    padding: 7px 18px;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Montserrat";
+    color: #00465F;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    
+    border-radius: 3px;
+    border: 1px solid #00465F;
+    background: #FFF;
+}
+
+.CommentBox-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-self: stretch;
+    
+    
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+}
+
+.ReplyBox-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-self: end;
+    gap: 16px;
+    align-self: stretch;
+
+    width: 90%;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background-color: #F3F3F3;
+}
+
+.CommentBox-HeaderRightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.AnnounHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 0 24px;
+}
+
+.AnnounHeader p{
+    margin-bottom: 0;
+}
+
+.AnnounAuthorEmail{
+    margin-bottom: 12px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 19.2px */
+}
+
+.AnnounAuthorRole{
+    margin-bottom: 4px;
+    color: #00465F;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
+}
+
+.AnnounHeaderCommLikes div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 15px;
+    gap: 8px;
+
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%; /* 16.8px */
+}
+
+
+.AnnounTextBody{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 24px 0 24px;
+}
+
+.AnnounTextBody h4{
+    color: #00465F;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 128%; /* 20.48px */
+    max-height: 20px;
+    overflow: hidden;
+}
+
+.AnnounContent{
+    display: flex;
+    padding: 16px;
+    align-items: start;
+    align-self: stretch;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    max-height: 130px;
+    overflow: hidden;
+}
+
+.AnnounContent p{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 128%;
+}
+
+.AnnounFooter{
+    display: flex;
+    justify-content: flex-end;
+    gap: 6px;
+    padding: 0 24px 24px 24px;
+}
+
+.AnnounFooter *{
+    color: #00465F;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.OwnAnnounPostFooter{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px 24px 24px;
+}
+
+.AnnounAndPostBox-LinkAnimation{
+    transition: background-color 0.3s ease;
+}
+
+.AnnounAndPostBox-LinkAnimation:hover{
+    color: #1DD6F3;
+}
+
+.AnnounAndPostBox-LinkAnimation:hover img{
+    filter: brightness(0) saturate(100%) invert(75%) sepia(50%) saturate(500%) hue-rotate(160deg);
+}
+
+.OwnAnnounPostFooter *{
+    color: #00465F;
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.AnnounHeaderCommLikes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Filter zone*/
+
+.AnnounsAndPostsFilterZone{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Filter */
+
+.AnnounsAndPosts-Filters{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 420px;
+    max-height: 450px;
+    padding: 24px 0;
+    gap: 24px;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background: #F9F9F9;
+    box-shadow: 0px 50px 79px 0px rgba(0, 0, 0, 0.02), 0px 19.259px 25.163px 0px rgba(0, 0, 0, 0.01), 0px 4.074px 6.437px 0px rgba(0, 0, 0, 0.01);
+}
+
+.FilterLine{
+    border: 1px dashed #1DD6F3;
+    width: 100%;
+}
+
+.AnnounAndPostFilterBox{
+    width: 100%;
+    padding: 0px 24px;
+    position: relative;
+}
+
+.AnnounAndPostFilterBox label{
+    margin-bottom: 10px;
+}
+
+.AnnounAndPostFilterInput{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding: 0 16px 0 16px;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    width: 100%;
+    height: 50px;
+}
+
+.InputAndIconFilter{
+    position: relative;
+    width: 100%;
+}
+
+.InputIcon{
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 16px;
+}
+
+
+/* Add Button */
+
+.AddPostOrAnnounButtonBox{
+    width: 420px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0 24px 0;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background: #F9F9F9;
+    box-shadow: 0px 50px 79px 0px rgba(0, 0, 0, 0.02), 0px 19.259px 25.163px 0px rgba(0, 0, 0, 0.01), 0px 4.074px 6.437px 0px rgba(0, 0, 0, 0.01);
+}
+
+.AddPostOrAnnounButtonH2{
+    color: #00465F;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+h2{
+    margin-bottom: 0;
+}
+
+.AddPostOrAnnounButton{
+    display: flex;
+    padding: 20px 16px 21px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    color: #C0C5CD;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+.OwnPostAnnounButtons{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.OwnPostDeleteButton{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: none;
+    border: none;
+}
+
+.GroupChangingButton{
+    background: none;
+    border: none;
+}
+
+.OwnPostEditLink{
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.GroupChangeSelect{
+    padding: 16px 16px 17px 16px;
+    gap: 10px;
+    min-width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+}
+
+svg{
+    width: 100%;
+}
+
+.ToggleButtonSquared_Announcements_laptop{
+    display: none;
+}
+
+.ToggleButtonSquared_Announcements_computer{
+    display: flex;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .AnnouncementsAndPostsBody{
+        padding: 45px 20px;
+    }
+    
+    .AnnounsAndPosts{
+        width: 760px;
+    }
+    
+    .ToggleButtonSquared_Announcements_computer{
+        display: none;
+    }
+    
+    .ToggleButtonSquared_Announcements_laptop{
+        display: flex;
+        justify-content: end;
+    }
+
+    .ToggleButtonSquared_Announcements_laptop button{
+        align-self: flex-end;
+    }
+    
+    .AnnouncementsAndPosts-UpperBlock{
+        width: 100%;
+        
+    }
+}

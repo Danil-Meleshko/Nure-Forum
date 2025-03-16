@@ -1,0 +1,17 @@
+div a {
+  text-decoration: none;
+}
+
+.no-display {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Segoe UI';
+  src: url('../../public/assets/Fonts/SegoeUI.ttf') format('truetype');
+  font-style: normal;
+  font-display: swap;
+}
+
+
+

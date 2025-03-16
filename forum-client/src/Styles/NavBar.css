@@ -1,0 +1,104 @@
+.Header{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    padding: 0px 300px;
+    justify-content: space-between;
+    align-items: start;
+    align-self: stretch;
+    border-bottom: 1px solid #D0D5DD;
+    background: #FFF;
+}
+
+/*Header-Left*/
+
+.Header-left{
+    display: flex;
+    gap: 12px;
+    height: 95px;
+}
+
+
+/*Header-Center*/
+
+.Header-center{
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    gap: 40px;
+}
+
+.Header-center a{
+    position: inherit;
+    align-self: center;
+    color: #000;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 18px */
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+}
+
+.Header-center a:hover{
+    color: #D0D5DD;    
+}
+
+
+/*Header-Right*/
+
+.Header-right{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+}
+
+.Header-right a{
+    position: inherit;
+    align-self: center;
+}
+
+#LogInButton{
+    color: #1DD6F3;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    transition: 0.3s;
+}
+
+#LogInButton:hover{
+    color: #00465F;
+}
+
+#RegisterButton{
+    display: flex;
+    padding: 13px 40px 15px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #00465F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    border-radius: 3px;
+    border: 1px solid #00465F;
+    transition: 0.3s;
+}
+
+#RegisterButton:hover{
+    background-color: #00465F;
+    color: #FFFFFF;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    .Header{
+        padding: 0 20px;
+    }
+}

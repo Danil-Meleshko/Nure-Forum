@@ -1,0 +1,118 @@
+.Footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 248px;
+    width: 100%;
+    padding: 40px 300px;
+    background-color: #00465F;
+}
+
+.FooterBody{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.FooterUp{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.FooterLeft{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+#NureIconBottom{
+    position: inherit;
+    display: flex;
+    align-self: center;
+    padding-top: 7px;
+}
+
+.FooterRightUp{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.FooterRightUp a{
+    position: inherit;
+    color: #FFF;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 18px */
+    transition: 0.3s;
+}
+
+.FooterRightUp a:hover{
+    color: #1DD6F3;
+}
+
+.FooterDown{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #1DD6F3;
+}
+
+.FooterDownRight{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    width: 340px;
+    gap: 8px;
+}
+
+.DivMonImgDown{
+    display: flex;
+    align-items: start;
+}
+
+.FooterDown{
+    padding-top: 13px;
+}
+
+.FooterDownLeft{
+    display: flex;
+    gap: 12px;
+}
+
+.Footer-animated-button{
+    position: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.Footer-animated-button img{
+    padding: 10px;
+    border: 1px #1DD6F3 solid;
+}
+
+.Footer-animated-button:hover {
+    background-color: #1DD6F3;
+}
+
+.Footer-animated-button:hover img {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(20%) saturate(2000%) hue-rotate(180deg);
+}
+
+@media (min-width: 1024px) and (max-width: 1440px){
+    .Footer{
+        padding: 40px 20px;
+    }
+}
+
+

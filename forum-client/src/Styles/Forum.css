@@ -1,0 +1,245 @@
+﻿.Posts-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 92%;
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Post-box{
+    width: 100%;
+    height: 135px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    position: relative;
+}
+
+.Author{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.AuthorName{
+    margin-left: 10px;
+    padding-top: 3px;
+}
+
+.Post-info{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 135px;
+    width: 70%;
+}
+
+.Post-info h4{
+    display: flex;
+    align-self: flex-start;
+    /*padding-left: 12px;*/
+}
+.Post-info p{
+    
+}
+
+.OptionButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 135px;
+    height: 135px;
+}
+
+.OptionButtons button{
+    width: 80px;
+    border: black solid 2px;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    height: 30px;
+}
+
+.OptionButtons a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border: black solid 2px;
+    border-radius: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    height: 30px;
+}
+
+/* Left side of the Page*/
+
+.LeftSide{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-right: 10px;
+}
+
+.LeftSide a{
+    color: black;
+    border: black solid 2px;
+    cursor: pointer;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: aquamarine;
+    border-radius: 20px;
+    margin-top: 75px;
+}
+
+
+/**/
+
+.PostAndAnnouncementDetails-Container{
+    display: flex;
+    align-self: center;
+    width: 1000px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.PostComments-Container{
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: center;
+    gap: 24px;
+}
+
+.CommentsBody{
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background: #F9F9F9;
+    padding: 16px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.AddCommentInput{
+    display: flex;
+    padding: 16px 16px 17px 16px;
+    align-items: center;
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+    border-radius: 3px;
+    border: 1px solid #D0D5DD;
+    background: #FFF;
+    align-self: stretch;
+}
+
+.CommentInputWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+.OnFocusCommentInputButtons{
+    display: flex;
+    gap: 10px;
+}
+
+.CommentInputCancel{
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    transition: background-color 0.3s ease;
+}
+
+.CommentInputCancel:hover{
+    background-color: #e6e6e6;
+}
+
+.RepliesButton{
+    align-self: end;
+    min-width: 110px;
+    padding: 5px 5px;
+    border-radius: 20px;
+    border: 1px solid #D0D5DD;
+    background: none;
+    transition: background-color 0.3s ease;
+}
+
+.RepliesButton:hover{
+    background-color: #e6e6e6;
+}
+
+.CommentInputSubmit{
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 20px;
+    border: 1px solid #D0D5DD;
+    background: #F9F9F9;
+    transition: background-color 0.3s ease;
+}
+
+.CommentInputSubmit:hover{
+    background-color: #e6e6e6;
+}
+
+.LikeButton{
+    display: flex;
+    border: none;
+    background: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+.LikeButton.liked {
+    animation: likeAnimation 0.45s ease-in-out;
+}
+
+@keyframes likeAnimation {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.default-image{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(20%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.liked-image {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(22%) saturate(2614%) hue-rotate(166deg) brightness(93%) contrast(101%);
+    transition: filter 0.3s ease-in-out;
+}

@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    container_name: sqlserver-app
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "RJQw2o&DQ69Q7ZO*"
+    ports:
+      - "1433:1433"
+    networks:
+      - app-network
+
+  app:
+    container_name: nure_hub
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "5025:5025"
+    depends_on:
+      - sqlserver
+    environment:
+      ConnectionStrings__ForumDataBase: "Server=tcp:sqlserver,1433;Database=NureForumDB;User Id=sa;Password=RJQw2o&DQ69Q7ZO*;TrustServerCertificate=True;Trusted_Connection=false;"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
